@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taheym76-recsys_jd080"
+version = "0.1.0"
+description = "对内容做归一化与分片比对，找出推荐系统算法工程师·多轮工具链的失败定位上的重复项并按相似度归并"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "taheym76" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://taheym76.github.io"
+Repository = "https://github.com/taheym76/recsys_jd080"
+Issues = "https://github.com/taheym76/recsys_jd080/issues"
+
+[project.scripts]
+recsys_jd080 = "recsys_jd080:main"
+
+[tool.setuptools]
+py-modules = ["recsys_jd080"]
